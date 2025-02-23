@@ -15,16 +15,16 @@
     <div class="calculator-container">
         <form onsubmit="calculateSellingPrice(event)">
             <label for="cost_price">Cost Price (£):</label>
-            <input type="number" id="cost_price" step="0.01" required>
+            <input type="number" id="cost_price" step="0.01" required class="input-box">
             
             <label for="profit_margin">Desired Profit Margin (%):</label>
-            <input type="number" id="profit_margin" step="0.1" required>
+            <input type="number" id="profit_margin" step="0.1" required class="input-box">
             
             <label>
                 <input type="checkbox" id="customer_pays_shipping"> Customer Pays Shipping (£3.48)
             </label>
             
-            <button type="submit">Calculate</button>
+            <button type="submit" class="calculate-button">Calculate</button>
         </form>
     </div>
     
@@ -34,22 +34,22 @@
             <table class="result-table">
                 <thead>
                     <tr>
-                        <th class="left-align">Description</th>
-                        <th class="left-align">Amount</th>
+                        <th class="table-header">Description</th>
+                        <th class="table-header">Amount</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td class="left-align"><strong>Selling Price (Excluding Postage):</strong></td>
-                        <td class="left-align"><span id="selling_price"></span></td>
+                        <td class="table-cell">Selling Price (Excluding Postage):</td>
+                        <td class="table-cell"><span id="selling_price"></span></td>
                     </tr>
                     <tr>
-                        <td class="left-align"><strong>Total Price (Including Customer Postage):</strong></td>
-                        <td class="left-align"><span id="total_price"></span></td>
+                        <td class="table-cell">Total Price (Including Customer Postage):</td>
+                        <td class="table-cell"><span id="total_price"></span></td>
                     </tr>
                     <tr>
-                        <td class="left-align"><strong>TikTok Commission (9% of Total):</strong></td>
-                        <td class="left-align"><span id="tiktok_commission"></span></td>
+                        <td class="table-cell">TikTok Commission (9% of Total):</td>
+                        <td class="table-cell"><span id="tiktok_commission"></span></td>
                     </tr>
                 </tbody>
             </table>

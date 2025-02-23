@@ -10,6 +10,13 @@ function calculateSellingPrice(event) {
     
     let shippingCost = customerPaysShipping ? 0 : freeShippingCost;
     let totalCost = cost + shippingCost;
+    
+    // Prevent profit margin from exceeding 99%
+    if (profitMargin >= 1) {
+        alert("Profit margin cannot be 100% or more. Please enter a lower value.");
+        return;
+    }
+    
     let sellingPrice = totalCost / (1 - profitMargin - commissionRate);
     
     // Round to two decimal places

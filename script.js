@@ -3,11 +3,11 @@ function calculatePrice(event) {
     
     let cost = parseFloat(document.getElementById('cost_price').value);
     let shipping = parseFloat(document.getElementById('shipping_fee').value);
-    let profit = parseFloat(document.getElementById('desired_profit').value);
+    let profitMargin = parseFloat(document.getElementById('desired_profit_margin').value) / 100;
     let commission = parseFloat(document.getElementById('commission_rate').value) / 100;
 
-    let totalCost = cost + shipping + profit;
-    let sellingPrice = totalCost / (1 - commission);
+    let totalCost = cost + shipping;
+    let sellingPrice = totalCost / (1 - profitMargin - commission);
     sellingPrice = sellingPrice.toFixed(2);
 
     let resultDiv = document.getElementById('result');

@@ -7,6 +7,34 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<div id="result" style="display:none;" class="result-container">
+    <h2>Price Calculation</h2>
+    <div class="calculation-box">
+        <table class="result-table">
+            <thead>
+                <tr>
+                    <th class="table-header">Description</th>
+                    <th class="table-header">Amount</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="table-cell">Selling Price (Excluding Postage):</td>
+                    <td class="table-cell"><span id="selling_price"></span></td>
+                </tr>
+                <tr>
+                    <td class="table-cell">Total Price (Including Customer Postage):</td>
+                    <td class="table-cell"><span id="total_price"></span></td>
+                </tr>
+                <tr>
+                    <td class="table-cell">TikTok Commission (9% of Total):</td>
+                    <td class="table-cell"><span id="tiktok_commission"></span></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
     <header class="header">
         <h1>Pricing Calculator</h1>
         <img src="logo.png" alt="Company Logo" class="large-logo">

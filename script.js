@@ -17,7 +17,7 @@ function calculateSellingPrice(event) {
     let totalPriceWithShipping = (parseFloat(sellingPrice) + customerShippingFee).toFixed(2);
     
     let resultDiv = document.getElementById('result');
-    resultDiv.innerHTML = `<h3>Pricing Breakdown</h3>
+    resultDiv.innerHTML = `<h2>Price Calculation</h2>
                            <p><strong>Selling Price (Excluding Postage):</strong> £${sellingPrice}</p>
                            <p><strong>Total Price (Including Customer Postage):</strong> £${totalPriceWithShipping}</p>`;
     resultDiv.style.display = "block";

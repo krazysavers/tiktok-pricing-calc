@@ -100,7 +100,7 @@
             <input type="number" id="shipping_fee" step="0.01" required>
 
             <label>Desired Profit (£):</label>
-            <input type="number" id="desired_profit" step="0.01" required>
+            <input type="number" id="" step="0.01" required>
 
             <label>TikTok Commission (%):</label>
             <input type="number" id="commission_rate" step="0.01" required>
@@ -115,7 +115,7 @@
             
             let cost = parseFloat(document.getElementById('cost_price').value);
             let shipping = parseFloat(document.getElementById('shipping_fee').value);
-            let profit = parseFloat(document.getElementById('desired_profit').value);
+            let profit = parseFloat(document.getElementById('').value);
             let commission = parseFloat(document.getElementById('commission_rate').value) / 100;
 
             let totalCost = cost + shipping + profit;

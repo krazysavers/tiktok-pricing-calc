@@ -26,26 +26,32 @@
             
             <button type="submit">Calculate</button>
         </form>
-        
-        <div id="result" style="display:none;" class="result-container">
-            <h2>Price Calculation</h2>
+    </div>
+    
+    <div id="result" style="display:none;" class="result-container">
+        <h2>Price Calculation</h2>
+        <div class="calculation-box">
             <table class="result-table">
-                <tr>
-                    <th class="left-align">Description</th>
-                    <th class="left-align">Amount</th>
-                </tr>
-                <tr>
-                    <td class="left-align"><strong>Selling Price (Excluding Postage):</strong></td>
-                    <td class="left-align"><span id="selling_price"></span></td>
-                </tr>
-                <tr>
-                    <td class="left-align"><strong>Total Price (Including Customer Postage):</strong></td>
-                    <td class="left-align"><span id="total_price"></span></td>
-                </tr>
-                <tr>
-                    <td class="left-align"><strong>TikTok Commission (9% of Total):</strong></td>
-                    <td class="left-align"><span id="tiktok_commission"></span></td>
-                </tr>
+                <thead>
+                    <tr>
+                        <th class="left-align">Description</th>
+                        <th class="left-align">Amount</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="left-align"><strong>Selling Price (Excluding Postage):</strong></td>
+                        <td class="left-align"><span id="selling_price"></span></td>
+                    </tr>
+                    <tr>
+                        <td class="left-align"><strong>Total Price (Including Customer Postage):</strong></td>
+                        <td class="left-align"><span id="total_price"></span></td>
+                    </tr>
+                    <tr>
+                        <td class="left-align"><strong>TikTok Commission (9% of Total):</strong></td>
+                        <td class="left-align"><span id="tiktok_commission"></span></td>
+                    </tr>
+                </tbody>
             </table>
         </div>
     </div>

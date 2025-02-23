@@ -15,10 +15,11 @@ function calculateSellingPrice(event) {
     // Round to two decimal places
     sellingPrice = sellingPrice.toFixed(2);
     let totalPriceWithShipping = (parseFloat(sellingPrice) + customerShippingFee).toFixed(2);
+    let tiktokCommission = (0.09 * (parseFloat(sellingPrice) + (customerPaysShipping ? customerShippingFee : freeShippingCost))).toFixed(2);
     
     let resultDiv = document.getElementById('result');
-    resultDiv.innerHTML = `<h2>Price Calculation</h2>
-                           <p><strong>Selling Price (Excluding Postage):</strong> £${sellingPrice}</p>
-                           <p><strong>Total Price (Including Customer Postage):</strong> £${totalPriceWithShipping}</p>`;
+    document.getElementById('selling_price').textContent = `£${sellingPrice}`;
+    document.getElementById('total_price').textContent = `£${totalPriceWithShipping}`;
+    document.getElementById('tiktok_commission').textContent = `£${tiktokCommission}`;
     resultDiv.style.display = "block";
 }

@@ -1,74 +1,43 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-}
-
 .header {
-    width: 100%;
-    background: linear-gradient(to right, #000000, #000000);
+    background-color: #FF8000;
     color: #FFFFFF;
-    text-align: center;
-    padding: 15px 0;
-    font-size: 24px;
-    font-weight: bold;
-}
-
-.header img {
-    height: 50px;
-    vertical-align: middle;
-}
-
-.calculator-container {
-    background: #fff;
+    display: flex;
+    align-items: center;
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    width: 300px;
+}
+
+.large-logo {
+    width: 150px; /* Adjust as needed */
+    height: auto;
+    margin-left: 20px;
+}
+
+.calculation-box {
+    border: 2px solid #000000;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #f9f9f9;
     margin-top: 20px;
+    width: fit-content;
 }
 
-h2 {
-    color: #333;
-}
-
-label {
-    display: block;
-    margin-top: 10px;
-    font-weight: bold;
-}
-
-input[type="number"] {
+.result-table {
     width: 100%;
-    padding: 8px;
-    margin-top: 5px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    border-collapse: collapse;
 }
 
-button {
-    margin-top: 15px;
-    background-color: #28a745;
-    color: white;
+.result-table th, .result-table td {
+    border: 1px solid #000;
     padding: 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    width: 100%;
-    font-size: 16px;
+    text-align: left;
 }
 
-button:hover {
-    background-color: #218838;
+.result-table th {
+    background-color: #FF8000;
+    color: #FFFFFF;
 }
 
-#result {
-    margin-top: 15px;
-    font-weight: bold;
-    color: #333;
+.result-container {
+    margin-top: 20px;
+    padding: 10px;
 }

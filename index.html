@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TikTok Pricing Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>TikTok Pricing Calculator</h1>
+        <form onsubmit="calculatePrice(event)">
+            <label>Cost Price (£):</label>
+            <input type="number" id="cost_price" step="0.01" required>
+
+            <label>Shipping Fee (£):</label>
+            <input type="number" id="shipping_fee" step="0.01" required>
+
+            <label>Desired Profit (£):</label>
+            <input type="number" id="desired_profit" step="0.01" required>
+
+            <label>TikTok Commission (%):</label>
+            <input type="number" id="commission_rate" step="0.01" required>
+
+            <button type="submit">Calculate</button>
+        </form>
+        <div class="result" id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
